@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.div_4, .div_2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.div_5 textarea{
+    height: 70px;
+    width: 300px;
+    display: block;
+}
+.contact_main{
+    justify-content: center;
+    justify-items: center;
+}
+.div_5 button{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: green;
+}

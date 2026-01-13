@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+    padding: 0;
+}
+.img1, .img2{
+    display: grid;
+    place-items: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+h3{
+    font-size: 30px;
+    font-style: italic;
+}
+.main{
+    margin: 0 90px 0 90px;
+    padding: auto;
+}
+.one, .two{
+    font-size: 20px;
+    text-align: justify;
+}
+h2{
+    color: #9B1C3B;
+    margin-left: 20px;
+}

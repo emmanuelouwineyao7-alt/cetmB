@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.inscript_title{
+    color: #9B1C3B;
+    padding: 20px;
+    border: solid;
+    text-align: center;
+    padding-left: 0px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inscript{
+    margin: 0 290px 0 290px;
+}
+.condition{
+    font-size: 25px;
+}
+.list{
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .inscript{
+    margin: 0 40px 0 40px;
+}
+    .inscript_title{
+    color: #9B1C3B;
+    padding: 20px;
+    border: solid;
+    width: 470px;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 60px 0 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+}
