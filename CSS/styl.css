@@ -1,6 +1,8 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
 }
 .site-header_dynamic-header_menu-dropdown-tablet{
     display: flex;
@@ -10,28 +12,55 @@ body{
     padding-block-start: 1rem;
     position: relative;
     border-style: none;
-    background-color: #4cb151;
+    background: linear-gradient(135deg, #2c5f2d 0%, #1a4620 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.site-branding-show-title{
+    display: flex;
 }
 .site-title_show{
     margin-left: 60px;
-    color: #3f51b0;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.site-title_show h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1;
 }
 .A{
-    color: #3f51b0;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.A:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 .direct_word{
-    border: 2px;
-    border-radius: 8px;
-    border-style: none;
-    background-color: rgb(174, 174, 174);
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ddd 0%, #bbb 100%);
     width: 70%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.direct{
-    width: 30%;
-    border-radius: 8px;
-    border-style: none;
-    background-color: rgb(253, 253, 253);
-}
+
 .B{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -58,7 +87,10 @@ body{
 .site-navigation_show{
     margin-left: 60px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .accueil{
@@ -69,11 +101,12 @@ body{
     height: 400px;
 }
 .welcome{
-    color: #4cb151;
-    font-family: "Times new roman", serif;
-    font-style: italic;
+    color: #2c5f2d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
     font-weight: bold;
-    font-size: 2rem;   
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
 }
 h2 p{
     overflow: hidden;
@@ -107,17 +140,86 @@ h2 span{
     padding: 0px;
 }
 .footer{
-    background-color: black;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: whitesmoke;
     display: flex;
-    gap: 500px;
-    margin-top: 5px;
-    padding: 20px;
-    font-family: "Times new roman", serif;
-    font-weight: bold;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 60px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    border-top: 5px solid #2c5f2d;
 }
 .f1{
-    margin-left: 40px;
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+.f1_cont{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.f1_cont img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+}
+.f1_cont h3{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #2c5f2d;
+}
+.f1 > div p{
+    margin: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+.f1 > div:nth-child(n+2) {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.f1 img[width="40px"]{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.f1 img[width="40px"]:hover{
+    transform: scale(1.2) translateY(-3px);
+    opacity: 0.8;
+}
+.F2{
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+.F2 h1{
+    font-size: 1.3rem;
+    color: #2c5f2d;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.F2 a{
+    display: inline-block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: all 0.3s ease;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+}
+.F2 a:hover{
+    color: #2c5f2d;
+    border-bottom-color: #2c5f2d;
+    padding-left: 8px;
 }
 .elem1 span{
     font-size: 30px;
@@ -127,20 +229,34 @@ h2 span{
     font-weight: bold;
 }
 .elem1{
-    background-color: rgb(37, 34, 34);
+    background: linear-gradient(135deg, #1a3a26 0%, #2c5f2d 100%);
     color: white;
     width: 50%;
     text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+.elem1:hover{
+    transform: translateY(-5px);
 }
 .element{
+    margin-top: 10px;
     display: flex;
+    gap: 20px;
 }
 .elem2{
-    background-color: red;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
     font-size: 30px;
     font-weight: bold;
     width: 50%;
     text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+.elem2:hover{
+    transform: translateY(-5px);
 }
 .el{
     color: white;
@@ -148,7 +264,7 @@ h2 span{
 .f1{
     display: block; 
     align-items: center; 
-    color: whitesmoke
+    color: whitesmoke;
 }
 .f1_cont{
     display: flex;
@@ -156,24 +272,32 @@ h2 span{
     font-size: 20px;
 }
 .communique{
-    padding: 30px;
-    background-color: #f3eeef;
+    padding: 40px;
+    background-color: #f8f9fa;
 }
 .com_title h3{
-    color: rgb(4, 107, 216);
+    color: #2c5f2d;
     text-align: center;
     padding: 20px;
-    font-size: 40px;
-    text-decoration: underline;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 .com1{
     border: none;
     width: 50%;
-    color: black;
-    background-color: rgb(9, 73, 222);
-    padding: 20px;
-    border-radius: 5px;
-    font-weight: 400;
+    color: white;
+    background: linear-gradient(135deg, #0952ce 0%, #0635a8 100%);
+    padding: 25px;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(9, 73, 222, 0.2);
+    transition: all 0.3s ease;
+}
+.com1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(9, 73, 222, 0.3);
 }
 .comm{
     display: flex;
@@ -203,12 +327,21 @@ h2 span{
     justify-items: center;
 }
     .footer{
-    background-color: black;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: whitesmoke;
-    display: flex;
-    gap: 100px;
-    margin-top: 5px;
-    padding: 20px;
+    display: block;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 5px solid #2c5f2d;
+}
+    .f1{
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+    .F2{
+    margin-top: 20px;
 }
     
     .B{
@@ -230,12 +363,17 @@ h2 span{
    .com1{
     border: none;
     width: 100%;
-    color: black;
-    background-color: rgb(9, 73, 222);
+    color: white;
+    background: linear-gradient(135deg, #0952ce 0%, #0635a8 100%);
     padding: 20px;
     border-radius: 5px;
     font-weight: 400;
     margin-top: 10px;
+    transition: all 0.3s ease;
+   }
+   .com1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(9, 73, 222, 0.3);
    }
    .direct_word{
     border: 2px;
@@ -255,4 +393,46 @@ h2 span{
 }
 .com1 p{
     text-align: justify;
+}
+.header-inner .menu-hamburger{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+} 
+
+@media screen and (max-width: 900px) {
+    .header-inner .menu-hamburger{
+        display: block;
+        margin-right: 120px;
+    }
+    .site-navigation_show{
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100px;
+        transition: all 0,5 ease;
+    }
+    .site-navigation_show .mobile-menu{
+    margin-left: 0;
+    }
+    .site-navigation_show .mobile-menu a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+        font-size: 1,2em;
+        margin-left: 0;
+    }
+    
 }
