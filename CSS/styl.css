@@ -94,7 +94,7 @@ body{
 }
 
 .accueil{
-    background-image: url(/image/ctmb.jpeg);
+    background-image: url(./image/ctmb.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
