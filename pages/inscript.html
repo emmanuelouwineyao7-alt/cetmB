@@ -12,49 +12,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./../favicon/favicon-16x16.png">
     <link rel="manifest" href="./../favicon/site.webmanifest">
 </head>
-<header id="site-header" class="site-header_dynamic-header_menu-dropdown-tablet">
-	<div class="header-inner">
-		<div class="site-branding show-title">
-			<div class="site-title_show">
-                <img src="./../image/Modifier uniquement .png" alt="" width="90px" height="90px">
-			    <h1>CETMB</h1>
-			</div>
-		</div>
-
-		<nav class="site-navigation_show" aria-label="Menu principal">
-            <a href="./../index.html" class="A">Accueil</a>
-            <a href="./../pages/apropos.html" class="A">A propos</a>
-            <a href="./../pages/formation.html" class="A">Nos Formations</a>
-            <a href="./../pages/galerie.html" class="A">Galerie multimédia</a>
-            <a href="./../pages/equipem.html" class="A">Ateliers et Equipements</a>
-            <a href="./../pages/inscript.html" class="A">Inscriptions et Admissions</a>
-            <a href="./../pages/viescolaire.html" class="A">Vie scolaire</a>
-            <a href="./../pages/cont.html" class="A">Contacts</a>   			
-        </nav>  							
-	</div>	
-</header>
-<body>
-    <h2 class="inscript_title">INSCRIPTIONS ET ADMISSIONS</h2>
-    <section class="inscript">
-        <ul class="list">
-            <li><h3>CRITÈRES D’ADMISSION DANS LES FILIÈRES </h3></li>
-            <ul>
-                <li><h5>Conditions générales (toutes filières)</h5></li>
-            </ul>
-        </ul>
-        <div class="Condition">
-            <p>
-                Pour être admis dans une filière de l’enseignement technique, le candidat doit : <br>
-                1.	Être titulaire du BEPC ou d’un diplôme équivalent reconnu. <br>
-                2.	Avoir une note superieur ou égale à <b>10 en Mathématiques, Sciences Physiques, Français et Dessin.</b> <br>
-                3.	Réussir, le cas échéant, au test d’entrée ou à l’étude de dossier. <br>
-                4.	Être apte physiquement (surtout pour les filières industrielles). <br>
-                5.	Être âgé de préférence de 15 à 22 ans (selon les textes en vigueur). <br>
-                6.	S’engager à respecter le règlement intérieur de l’établissement.
-            </p>
-        </div>
-
-        <form class="was-validated">
+            <header>
+                <nav>
+                    <div>
+                        <img src="../image/Modifier uniquement .png" alt="" width="45px" height="45px">
+                        <h1 class="logo">CETMB</h1>
+                    </div>
+                    <ul id="menuList">
+                        <li><a href="../index.html" >Accueil</a></li>
+                        <li><a href="./apropos.html">A propos</a></li>
+                        <li><a href="./formation.html">Nos Formations</a></li>
+                        <li><a href="./galerie.html" >Galerie multimédia</a></li>
+                        <li><a href="./equipem.html" >Ateliers et Equipements</a></li>
+                        <li><a href="./inscript.html" >Inscriptions et Admissions</a></li>
+                        <li><a href="./viescolaire.html" >Vie scolaire</a></li>
+                        <li><a href="./cont.html" >Contacts</a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                    </div>
+                </nav>
+            </header>
             <div class="mb-3">
                 <label for="file">Acte de naissance</label>
                 <input type="file" class="form-control" aria-label="file example" required>

@@ -1,8 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
+}
+.logo{
+    color: white;
+}
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: linear-gradient(135deg, #2c5f2d 0%, #1a4620 100%);
+
+    position: relative;
+    height: 100px;  
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    font-size: 30px;
+    color: white;
+}
+@media(max-width : 600px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        right: 0px;
+        flex-direction: column;
+        text-align: center;
+        background: #2c5f2d;
+        gap: 0px;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
 }
 .site-header_dynamic-header_menu-dropdown-tablet{
     display: flex;
@@ -19,7 +78,7 @@ body{
     display: flex;
 }
 .site-title_show{
-    margin-left: 60px;
+    margin-left: 10px;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
@@ -44,7 +103,7 @@ body{
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 6px;
     font-weight: 500;
 }
